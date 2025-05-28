@@ -102,7 +102,15 @@ body {
   }
 
   // .main__second-title
-
+  &__block-second {
+    align-self: center;
+    display: flex;
+    gap: 0.2rem;
+    @media (max-width: 768px) {
+      align-self: baseline;
+      flex-direction: column;
+    }
+  }
   &__second-title {
     font-size: 30px;
     color: #f8c2d3;

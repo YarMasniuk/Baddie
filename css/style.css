@@ -143,6 +143,24 @@ body {
         align-self: baseline;
   }
 }
+.main__block-second {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.2rem;
+}
+@media (max-width: 768px) {
+  .main__block-second {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .main__second-title {
   font-size: 30px;
   color: #f8c2d3;
